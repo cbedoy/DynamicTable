@@ -2,8 +2,8 @@
 
 Dynamic Table make easier how use and inject cells on your **UITableView**. Just your custom **UITableViewCell** should implement a **protocol** and **overwrite** one method. 
 
-# How use
-- Just copy and paste Library/ folder into your project.
+# How it uses
+- Just copy and paste [Library/](https://github.com/cbedoy/DynamicTable/tree/master/DynamicTable/Library) folder into your project.
 - Add DynamicCell protocol in your custom UITableViewCell
 ```objective-c
 @interface AvatarCell : UITableViewCell<DynamicCell>
@@ -18,8 +18,6 @@ Dynamic Table make easier how use and inject cells on your **UITableView**. Just
     */
 }
 ```
-
-
 
 # How it works
 ```objective-c
@@ -45,6 +43,12 @@ Dynamic Table make easier how use and inject cells on your **UITableView**. Just
 }
 ```
 
+# How it looks
+![With a little of magic](https://raw.githubusercontent.com/cbedoy/DynamicTable/master/Media/media.png)
+
+# Author
+
+[Carlos Bedoy](https://www.linkedin.com/in/carlos-bedoy-34248187/) | Lead Mobile Enginner at DagM8
 
 # License
 
