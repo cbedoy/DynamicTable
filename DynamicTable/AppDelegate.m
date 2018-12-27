@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AmazingViewController/AmazingViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    AmazingViewController *viewController = [[AmazingViewController alloc] initWithNibName:@"AmazingViewController" bundle:nil];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController: viewController];
+    navigationController.navigationBar.hidden = true;
+    
+    self.window  = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = navigationController;
+    self.window.backgroundColor = [UIColor clearColor];
+    
     return YES;
 }
 
