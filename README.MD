@@ -27,6 +27,22 @@ Dynamic Table make easier how use and inject cells on your **UITableView**. Just
 
 # How it works
 ```objective-c
+//Inject your elements when you have
+
+- (void)amazingResponse:(NSArrray *)elements{
+    elements.forEach {
+        [self.viewModel addObject:@{
+                                @"nib" : @"SectionCell",
+                                @"value": it[@"amazingValue"],
+                                @"custom" : it[@"avazingCustomValue"]
+                                @"height" : @(44)
+                                }];
+    }
+    
+    [[self tableView]reloadData]; //Also works insert or remove elements :)
+}
+
+
 - (UITableViewCell *) cellForCellModel:(NSDictionary *)cellModel
 {
     NSString *nibString = cellModel[@"nib"];
