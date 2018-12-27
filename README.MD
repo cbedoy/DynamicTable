@@ -4,6 +4,12 @@ Dynamic Table make easier how use and inject cells on your **UITableView**. Just
 
 # How it uses
 - Just copy and paste [Library/](https://github.com/cbedoy/DynamicTable/tree/master/DynamicTable/Library) folder into your project.
+- Your UITableViewController should have an UITableView, so just extends from DynamicTableViewController
+```objective-c
+#import "DynamicTableViewController.h"
+@interface AmazingViewController : DynamicTableViewController
+```
+- And connect you UITableView as IBOutlet of your CustomViewController
 - Add DynamicCell protocol in your custom UITableViewCell
 ```objective-c
 @interface AvatarCell : UITableViewCell<DynamicCell>
